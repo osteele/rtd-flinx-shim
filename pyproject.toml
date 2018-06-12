@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rtd-flinx-shim"
+version = "0.1.0"
+description = "Trick RTD into using with Flinx."
+authors = ["Oliver Steele <steele@osteele.com>"]
+readme = "README.rst"
+repository = "https://github.com/osteele/rtd-flinx-shim"
+
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.0"
+flinx = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+keyring = "^12.2"
+
+[tool.poetry.scripts]
+rtd_flynx = 'rtd_flinx_shim:main'
